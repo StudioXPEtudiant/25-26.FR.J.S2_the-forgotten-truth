@@ -1,0 +1,104 @@
+[gd_scene load_steps=13 format=3 uid="uid://uswn8oq3770k"]
+
+[ext_resource type="Texture2D" uid="uid://df2ayrskdj7ka" path="res://Protagonist  (1).png" id="1_3sd7o"]
+[ext_resource type="Script" uid="uid://dl0pccuaad260" path="res://character_body_3d.gd" id="2_1abo5"]
+[ext_resource type="PackedScene" uid="uid://dnkyyx47axwu8" path="res://Assets/modular-environment/source/Test06.fbx" id="2_3xosi"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_3xosi"]
+atlas = ExtResource("1_3sd7o")
+region = Rect2(0, 0, 240, 240)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_1abo5"]
+atlas = ExtResource("1_3sd7o")
+region = Rect2(240, 0, 240, 240)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_knagl"]
+atlas = ExtResource("1_3sd7o")
+region = Rect2(0, 240, 240, 240)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_kl852"]
+atlas = ExtResource("1_3sd7o")
+region = Rect2(240, 240, 240, 240)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_4nmru"]
+atlas = ExtResource("1_3sd7o")
+region = Rect2(0, 480, 240, 240)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_05u5g"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_3xosi")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_1abo5")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_knagl")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_kl852")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_4nmru")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_knagl"]
+
+[sub_resource type="Animation" id="Animation_1abo5"]
+resource_name = "Mouvement"
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_knagl"]
+_data = {
+&"Mouvement": SubResource("Animation_1abo5")
+}
+
+[node name="Scene1" type="Node3D"]
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 0.879814, 0.475317, 0, -0.475317, 0.879814, 0, 5.28124, 8.63161)
+shadow_enabled = true
+
+[node name="Test06" parent="." instance=ExtResource("2_3xosi")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.395865, -0.244979, 3.53836)
+visible = false
+
+[node name="CharacterBody3D" type="CharacterBody3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.59591, 0)
+script = ExtResource("2_1abo5")
+
+[node name="AnimatedSprite3D" type="AnimatedSprite3D" parent="CharacterBody3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 2)
+billboard = 2
+shaded = true
+alpha_cut = 2
+texture_filter = 0
+sprite_frames = SubResource("SpriteFrames_05u5g")
+frame_progress = 0.683666
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="CharacterBody3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 2)
+shape = SubResource("CapsuleShape3D_knagl")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="CharacterBody3D"]
+root_node = NodePath("../..")
+libraries = {
+&"": SubResource("AnimationLibrary_knagl")
+}
+
+[node name="Camera3D" type="Camera3D" parent="CharacterBody3D"]
+transform = Transform3D(1, 0, 0, 0, 0.965926, 0.258819, 0, -0.258819, 0.965926, 0, 1.54644, 3.92658)
+
+[node name="CSGBox3D" type="CSGBox3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.374094, 0.5005, 2.42002)
+use_collision = true
+size = Vector3(8.99683, 0.001, 6)
+
+[node name="CSGBox3D2" type="CSGBox3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, -0.246602, 2.501, -0.159962)
+use_collision = true
+size = Vector3(10, 0.001, 5)
