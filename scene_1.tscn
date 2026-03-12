@@ -93,12 +93,17 @@ libraries = {
 [node name="Camera3D" type="Camera3D" parent="CharacterBody3D"]
 transform = Transform3D(1, 0, 0, 0, 0.965926, 0.258819, 0, -0.258819, 0.965926, 0, 1.54644, 3.92658)
 
-[node name="CSGBox3D" type="CSGBox3D" parent="."]
+[node name="Sol" type="CSGBox3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.374094, 0.5005, 2.42002)
 use_collision = true
 size = Vector3(8.99683, 0.001, 6)
 
-[node name="CSGBox3D2" type="CSGBox3D" parent="."]
+[node name="Mur1" type="CSGBox3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, -0.246602, 2.501, -0.159962)
+use_collision = true
+size = Vector3(10, 0.001, 5)
+
+[node name="Mur2" type="CSGBox3D" parent="."]
+transform = Transform3D(0.00483461, 0.999988, 0.000820257, 9.40759e-12, -0.000820267, 1, 0.999988, -0.00483458, -3.96564e-06, 4.17704, 2.66096, 2.34104)
 use_collision = true
 size = Vector3(10, 0.001, 5)

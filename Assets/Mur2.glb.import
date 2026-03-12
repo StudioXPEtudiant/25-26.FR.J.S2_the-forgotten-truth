@@ -3,13 +3,13 @@
 importer="scene"
 importer_version=1
 type="PackedScene"
-uid="uid://dlohovqi2le2l"
-path="res://.godot/imported/Murcoin.glb-b89d5ffc4be776935d98ecd610e802fa.scn"
+uid="uid://du6v26la8eab1"
+path="res://.godot/imported/Mur2.glb-119ddfb0abce430f88d8e110f6248398.scn"
 
 [deps]
 
-source_file="res://Assets/Murcoin.glb"
-dest_files=["res://.godot/imported/Murcoin.glb-b89d5ffc4be776935d98ecd610e802fa.scn"]
+source_file="res://Assets/Mur2.glb"
+dest_files=["res://.godot/imported/Mur2.glb-119ddfb0abce430f88d8e110f6248398.scn"]
 
 [params]
 
