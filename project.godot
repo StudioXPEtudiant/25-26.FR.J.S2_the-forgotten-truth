@@ -10,6 +10,7 @@ config_version=5
 
 [application]
 
-config/name="TheForgottenTruth"
-config/features=PackedStringArray("4.2", "Forward Plus")
+config/name="The Forgotten Truth"
+run/main_scene="uid://uswn8oq3770k"
+config/features=PackedStringArray("4.5", "Forward Plus")
 config/icon="res://icon.svg"
