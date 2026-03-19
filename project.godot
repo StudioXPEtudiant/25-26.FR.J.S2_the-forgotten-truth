@@ -16,5 +16,5 @@ compatibility/default_parent_skeleton_in_mesh_instance_3d=true
 
 config/name="The Forgotten Truth"
 run/main_scene="uid://uswn8oq3770k"
-config/features=PackedStringArray("4.5", "Forward Plus")
+config/features=PackedStringArray("4.6", "Forward Plus")
 config/icon="res://icon.svg"
