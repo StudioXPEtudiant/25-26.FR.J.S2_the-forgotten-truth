@@ -1,8 +1,8 @@
 extends CharacterBody3D
 
-
-const SPEED = 5.0
-const JUMP_VELOCITY = 4.5
+@onready var sprite: AnimatedSprite3D = $AnimatedSprite3D
+const SPEED = 2.0
+const JUMP_VELOCITY = 2.5
 
 func _physics_process(delta: float) -> void:
 	# Add the gravity.
@@ -25,3 +25,13 @@ func _physics_process(delta: float) -> void:
 		velocity.z = move_toward(velocity.z, 0, SPEED)
 
 	move_and_slide()
+
+#Changer la direction du sprite selon le joueur (droite/gauche)
+	if abs(velocity.x) > 0.1:
+		sprite.flip_h = velocity.x < 0
+
+#Animation
+	if direction:
+		sprite.play("Marche")
+	else:
+		sprite.play("Idle")

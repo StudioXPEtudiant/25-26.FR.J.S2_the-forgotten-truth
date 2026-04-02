@@ -1,8 +1,13 @@
-[gd_scene load_steps=13 format=3 uid="uid://uswn8oq3770k"]
+[gd_scene format=3 uid="uid://uswn8oq3770k"]
 
 [ext_resource type="Texture2D" uid="uid://df2ayrskdj7ka" path="res://Protagonist  (1).png" id="1_3sd7o"]
 [ext_resource type="Script" uid="uid://dl0pccuaad260" path="res://character_body_3d.gd" id="2_1abo5"]
 [ext_resource type="PackedScene" uid="uid://dnkyyx47axwu8" path="res://Assets/modular-environment/source/Test06.fbx" id="2_3xosi"]
+[ext_resource type="PackedScene" uid="uid://bn7ib04uo5a4v" path="res://scene_Table.tscn" id="4_knagl"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_05u5g"]
+atlas = ExtResource("1_3sd7o")
+region = Rect2(0, 0, 240, 240)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_3xosi"]
 atlas = ExtResource("1_3sd7o")
@@ -28,6 +33,14 @@ region = Rect2(0, 480, 240, 240)
 animations = [{
 "frames": [{
 "duration": 1.0,
+"texture": SubResource("AtlasTexture_05u5g")
+}],
+"loop": true,
+"name": &"Idle",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
 "texture": SubResource("AtlasTexture_3xosi")
 }, {
 "duration": 1.0,
@@ -43,67 +56,57 @@ animations = [{
 "texture": SubResource("AtlasTexture_4nmru")
 }],
 "loop": true,
-"name": &"default",
+"name": &"Marche",
 "speed": 5.0
 }]
 
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_knagl"]
 
-[sub_resource type="Animation" id="Animation_1abo5"]
-resource_name = "Mouvement"
+[node name="Scene1" type="Node3D" unique_id=1309598555]
 
-[sub_resource type="AnimationLibrary" id="AnimationLibrary_knagl"]
-_data = {
-&"Mouvement": SubResource("Animation_1abo5")
-}
-
-[node name="Scene1" type="Node3D"]
-
-[node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="." unique_id=1567548787]
 transform = Transform3D(1, 0, 0, 0, 0.879814, 0.475317, 0, -0.475317, 0.879814, 0, 5.28124, 8.63161)
 shadow_enabled = true
 
-[node name="Test06" parent="." instance=ExtResource("2_3xosi")]
+[node name="Test06" parent="." unique_id=375805777 instance=ExtResource("2_3xosi")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.395865, -0.244979, 3.53836)
 visible = false
 
-[node name="CharacterBody3D" type="CharacterBody3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.59591, 0)
+[node name="CharacterBody3D" type="CharacterBody3D" parent="." unique_id=771632483]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.59591, 0.01129663)
 script = ExtResource("2_1abo5")
 
-[node name="AnimatedSprite3D" type="AnimatedSprite3D" parent="CharacterBody3D"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 2)
+[node name="AnimatedSprite3D" type="AnimatedSprite3D" parent="CharacterBody3D" unique_id=401122915]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.207516, 1.9738041)
 billboard = 2
 shaded = true
 alpha_cut = 2
 texture_filter = 0
 sprite_frames = SubResource("SpriteFrames_05u5g")
-frame_progress = 0.683666
+animation = &"Idle"
+frame_progress = 0.5671365
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="CharacterBody3D"]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="CharacterBody3D" unique_id=115650113]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 2)
 shape = SubResource("CapsuleShape3D_knagl")
 
-[node name="AnimationPlayer" type="AnimationPlayer" parent="CharacterBody3D"]
-root_node = NodePath("../..")
-libraries = {
-&"": SubResource("AnimationLibrary_knagl")
-}
-
-[node name="Camera3D" type="Camera3D" parent="CharacterBody3D"]
+[node name="Camera3D" type="Camera3D" parent="CharacterBody3D" unique_id=2051571171]
 transform = Transform3D(1, 0, 0, 0, 0.965926, 0.258819, 0, -0.258819, 0.965926, 0, 1.54644, 3.92658)
 
-[node name="Sol" type="CSGBox3D" parent="."]
+[node name="Sol" type="CSGBox3D" parent="." unique_id=430742804]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.374094, 0.5005, 2.42002)
 use_collision = true
 size = Vector3(8.99683, 0.001, 6)
 
-[node name="Mur1" type="CSGBox3D" parent="."]
+[node name="Mur1" type="CSGBox3D" parent="." unique_id=996753234]
 transform = Transform3D(1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, -0.246602, 2.501, -0.159962)
 use_collision = true
 size = Vector3(10, 0.001, 5)
 
-[node name="Mur2" type="CSGBox3D" parent="."]
+[node name="Mur2" type="CSGBox3D" parent="." unique_id=936074910]
 transform = Transform3D(0.00483461, 0.999988, 0.000820257, 9.40759e-12, -0.000820267, 1, 0.999988, -0.00483458, -3.96564e-06, 4.17704, 2.66096, 2.34104)
 use_collision = true
 size = Vector3(10, 0.001, 5)
+
+[node name="Table" parent="." unique_id=1491343077 instance=ExtResource("4_knagl")]
+transform = Transform3D(1.21, 0, 0, 0, 1.21, 0, 0, 0, 1.21, -2.0970864, 0.87869513, 0.370049)
