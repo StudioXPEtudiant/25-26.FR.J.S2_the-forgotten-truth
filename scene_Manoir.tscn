@@ -1,0 +1,41 @@
+[gd_scene format=3 uid="uid://ckpd64407a6ri"]
+
+[sub_resource type="CylinderMesh" id="CylinderMesh_uwboh"]
+
+[sub_resource type="BoxMesh" id="BoxMesh_uwboh"]
+
+[sub_resource type="BoxMesh" id="BoxMesh_4d84w"]
+
+[node name="Extérieur_Manoir" type="Node3D" unique_id=170440207]
+
+[node name="Pilier1" type="CSGMesh3D" parent="." unique_id=1285240519]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.9793453, 0)
+mesh = SubResource("CylinderMesh_uwboh")
+
+[node name="Dessous" type="CSGMesh3D" parent="Pilier1" unique_id=273778699]
+transform = Transform3D(1, 0, 0, 0, 0.3018713, 0, 0, 0, 1, 0, -0.9793453, 0)
+mesh = SubResource("BoxMesh_uwboh")
+
+[node name="Dessus" type="CSGMesh3D" parent="Pilier1" unique_id=59669368]
+transform = Transform3D(1, 0, 0, 0, 0.3018713, 0, 0, 0, 1, 0, 0.8600812, 0)
+mesh = SubResource("BoxMesh_uwboh")
+
+[node name="Pilier2" type="CSGMesh3D" parent="." unique_id=1434810256]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6.399323, 0.9732946, 0)
+mesh = SubResource("CylinderMesh_uwboh")
+
+[node name="Dessous" type="CSGMesh3D" parent="Pilier2" unique_id=460780607]
+transform = Transform3D(1, 0, 0, 0, 0.3018713, 0, 0, 0, 1, 0, -0.9793453, 0)
+mesh = SubResource("BoxMesh_uwboh")
+
+[node name="Dessus" type="CSGMesh3D" parent="Pilier2" unique_id=1142566856]
+transform = Transform3D(1, 0, 0, 0, 0.3018713, 0, 0, 0, 1, 0, 0.8600812, 0)
+mesh = SubResource("BoxMesh_uwboh")
+
+[node name="Mur_Devant" type="CSGMesh3D" parent="." unique_id=202877134]
+transform = Transform3D(1.714313, 0, 0, 0, 2.2112374, 0, 0, 0, 1, 1.3523445, 0.90693426, 0)
+mesh = SubResource("BoxMesh_4d84w")
+
+[node name="Mur_Devant2" type="CSGMesh3D" parent="." unique_id=1670492703]
+transform = Transform3D(1.714313, 0, 0, 0, 2.2112374, 0, 0, 0, 1, 5.0388074, 0.90693426, 0)
+mesh = SubResource("BoxMesh_4d84w")

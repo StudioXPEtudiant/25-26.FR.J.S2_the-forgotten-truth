@@ -1,0 +1,73 @@
+[gd_scene format=3 uid="uid://cragf6o7s3ksl"]
+
+[sub_resource type="CylinderMesh" id="CylinderMesh_uwboh"]
+
+[sub_resource type="BoxMesh" id="BoxMesh_uwboh"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_ivpgy"]
+size = Vector3(1, 2.1524658, 1)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_2nygj"]
+size = Vector3(1, 2.1522827, 1)
+
+[sub_resource type="BoxMesh" id="BoxMesh_4d84w"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_jkn0p"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_0tmnt"]
+
+[node name="Extérieur_Manoir" type="Node3D" unique_id=170440207]
+
+[node name="Pilier1" type="CSGMesh3D" parent="." unique_id=1285240519]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.9793453, 0)
+mesh = SubResource("CylinderMesh_uwboh")
+
+[node name="Dessous" type="CSGMesh3D" parent="Pilier1" unique_id=273778699]
+transform = Transform3D(1, 0, 0, 0, 0.3018713, 0, 0, 0, 1, 0, -0.9793453, 0)
+mesh = SubResource("BoxMesh_uwboh")
+
+[node name="Dessus" type="CSGMesh3D" parent="Pilier1" unique_id=59669368]
+transform = Transform3D(1, 0, 0, 0, 0.3018713, 0, 0, 0, 1, 0, 0.8600812, 0)
+mesh = SubResource("BoxMesh_uwboh")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="Pilier1" unique_id=2135638820]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Pilier1/StaticBody3D" unique_id=1248806194]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.061462402, 0)
+shape = SubResource("BoxShape3D_ivpgy")
+
+[node name="Pilier2" type="CSGMesh3D" parent="." unique_id=1434810256]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6.399323, 0.9732946, 0)
+mesh = SubResource("CylinderMesh_uwboh")
+
+[node name="Dessous" type="CSGMesh3D" parent="Pilier2" unique_id=460780607]
+transform = Transform3D(1, 0, 0, 0, 0.3018713, 0, 0, 0, 1, 0, -0.9793453, 0)
+mesh = SubResource("BoxMesh_uwboh")
+
+[node name="Dessus" type="CSGMesh3D" parent="Pilier2" unique_id=1142566856]
+transform = Transform3D(1, 0, 0, 0, 0.3018713, 0, 0, 0, 1, 0, 0.8600812, 0)
+mesh = SubResource("BoxMesh_uwboh")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="Pilier2" unique_id=105987930]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Pilier2/StaticBody3D" unique_id=1247712768]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.054229736, 0)
+shape = SubResource("BoxShape3D_2nygj")
+
+[node name="Mur_Devant" type="CSGMesh3D" parent="." unique_id=202877134]
+transform = Transform3D(1.714313, 0, 0, 0, 2.2112374, 0, 0, 0, 0.5233663, 1.3523445, 0.90693426, 0)
+mesh = SubResource("BoxMesh_4d84w")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="Mur_Devant" unique_id=175893572]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Mur_Devant/StaticBody3D" unique_id=872737729]
+shape = SubResource("BoxShape3D_jkn0p")
+
+[node name="Mur_Devant2" type="CSGMesh3D" parent="." unique_id=1670492703]
+transform = Transform3D(1.714313, 0, 0, 0, 2.2112374, 0, 0, 0, 0.5013338, 5.0388074, 0.90693426, 0)
+mesh = SubResource("BoxMesh_4d84w")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="Mur_Devant2" unique_id=1752491934]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Mur_Devant2/StaticBody3D" unique_id=33034507]
+shape = SubResource("BoxShape3D_0tmnt")
