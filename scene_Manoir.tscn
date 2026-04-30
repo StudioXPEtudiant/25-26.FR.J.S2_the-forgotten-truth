@@ -1,8 +1,8 @@
 [gd_scene format=3 uid="uid://cls5jb02u8foq"]
 
-[ext_resource type="PackedScene" path="res://porte_manoir.tscn" id="1_4d84w"]
 [ext_resource type="Texture2D" uid="uid://djs346crnvmc" path="res://MEULIERE-ton-naturel-1024x1024.jpg" id="1_0w5hp"]
-[ext_resource type="PackedScene" uid="uid://0ogorqjumeid" path="res://porte_manoir.tscn" id="1_4d84w"]
+[ext_resource type="PackedScene" path="res://porte_manoir.tscn" id="1_4d84w"]
+[ext_resource type="Script" uid="uid://b0tdhak76aghf" path="res://sol_3_2.gd" id="3_lnjae"]
 
 [sub_resource type="BoxMesh" id="BoxMesh_4d84w"]
 
@@ -36,11 +36,22 @@ albedo_color = Color(0.3764706, 0.24313726, 0.050980393, 1)
 
 [sub_resource type="BoxMesh" id="BoxMesh_86sye"]
 
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_u2sta"]
+albedo_color = Color(0.37550318, 0.24209929, 0.05160109, 1)
+
 [sub_resource type="BoxMesh" id="BoxMesh_3scf2"]
 
 [sub_resource type="BoxMesh" id="BoxMesh_ljpv5"]
-[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_u2sta"]
-albedo_color = Color(0.37550318, 0.24209929, 0.05160109, 1)
+
+[sub_resource type="BoxMesh" id="BoxMesh_gqafj"]
+
+[sub_resource type="BoxMesh" id="BoxMesh_vwg2o"]
+
+[sub_resource type="BoxMesh" id="BoxMesh_3iitt"]
+
+[sub_resource type="BoxMesh" id="BoxMesh_ms2pb"]
+
+[sub_resource type="BoxMesh" id="BoxMesh_rjhvk"]
 
 [node name="Extérieur_Manoir" type="Node3D" unique_id=170440207]
 
@@ -106,3 +117,24 @@ mesh = SubResource("BoxMesh_3scf2")
 [node name="mur2_2" type="CSGMesh3D" parent="." unique_id=1213615082]
 transform = Transform3D(9.282485, 0, 0, 0, 2.4102042, 0, 0, 0, 1, 11.86349, 0.8339398, 0.019002914)
 mesh = SubResource("BoxMesh_ljpv5")
+
+[node name="sol2_2" type="CSGMesh3D" parent="." unique_id=974873749]
+transform = Transform3D(9.654, 0, 0, 0, 0.05, 0, 0, 0, 11.242, 11.191836, 0.22240663, -5.9150205)
+mesh = SubResource("BoxMesh_gqafj")
+script = ExtResource("3_lnjae")
+
+[node name="sol3_2" type="CSGMesh3D" parent="." unique_id=651387857]
+transform = Transform3D(9.654, 0, 0, 0, 0.05, 0, 0, 0, 11.242, -4.8676867, 0.2323873, -6.366064)
+mesh = SubResource("BoxMesh_vwg2o")
+
+[node name="mur3_2" type="CSGMesh3D" parent="." unique_id=1230251928]
+transform = Transform3D(0.2, 0, 0, 0, 2.4, 0, 0, 0, 32, -9.48978, 0.80153203, -15.83708)
+mesh = SubResource("BoxMesh_3iitt")
+
+[node name="mur4_2" type="CSGMesh3D" parent="." unique_id=590035140]
+transform = Transform3D(9.2, 0, 0, 0, 2.4, 0, 0, 0, 1, -5.3279877, 0.8765559, -0.0065709352)
+mesh = SubResource("BoxMesh_ms2pb")
+
+[node name="CSGMesh3D2" type="CSGMesh3D" parent="." unique_id=1759480737]
+transform = Transform3D(25.701195, 0, 0, 0, 2.1, 0, 0, 0, 0.05, 3.3832717, 0.9507667, -31.776949)
+mesh = SubResource("BoxMesh_rjhvk")
