@@ -8,6 +8,10 @@
 
 [sub_resource type="BoxMesh" id="BoxMesh_0w5hp"]
 
+[sub_resource type="BoxMesh" id="BoxMesh_lnjae"]
+
+[sub_resource type="BoxMesh" id="BoxMesh_cpi3o"]
+
 [node name="Extérieur_Manoir" type="Node3D" unique_id=170440207]
 
 [node name="Pilier1" type="CSGMesh3D" parent="." unique_id=1285240519]
@@ -42,6 +46,17 @@ mesh = SubResource("BoxMesh_4d84w")
 transform = Transform3D(1.714313, 0, 0, 0, 2.2112374, 0, 0, 0, 1, 5.0388074, 0.90693426, 0)
 mesh = SubResource("BoxMesh_4d84w")
 
-[node name="CSGMesh3D" type="CSGMesh3D" parent="." unique_id=1047065920]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.4881735, 0, 0)
+[node name="MarchesEntréeManoir" type="Node3D" parent="." unique_id=1326398652]
+transform = Transform3D(1.9982365, 0, 0, 0, 0.14902335, 0, 0, 0, 1, 3.180007, -0.12624419, 0.69259953)
+
+[node name="Marche1" type="CSGMesh3D" parent="MarchesEntréeManoir" unique_id=1047065920]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -0.048181057)
 mesh = SubResource("BoxMesh_0w5hp")
+
+[node name="Marche2" type="CSGMesh3D" parent="MarchesEntréeManoir" unique_id=1877327597]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.0166471, -0.18778944)
+mesh = SubResource("BoxMesh_lnjae")
+
+[node name="Marche3" type="CSGMesh3D" parent="MarchesEntréeManoir" unique_id=536415235]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.0593567, -0.30024266)
+mesh = SubResource("BoxMesh_cpi3o")
