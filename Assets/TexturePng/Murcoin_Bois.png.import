@@ -2,17 +2,20 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://djs346crnvmc"
-path.s3tc="res://.godot/imported/MEULIERE-ton-naturel-1024x1024.jpg-940b13ae9e074bd499c980e82f2ce5b6.s3tc.ctex"
+uid="uid://c2ff77gc2gk7e"
+path.s3tc="res://.godot/imported/Murcoin_Bois.png-4d6a91fbb06d4dea7e89d5134604fd7a.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
 }
+generator_parameters={
+"md5": "2e4bf18215027de3b3abd94cb1ab8782"
+}
 
 [deps]
 
-source_file="res://MEULIERE-ton-naturel-1024x1024.jpg"
-dest_files=["res://.godot/imported/MEULIERE-ton-naturel-1024x1024.jpg-940b13ae9e074bd499c980e82f2ce5b6.s3tc.ctex"]
+source_file="res://Assets/TexturePng/Murcoin_Bois.png"
+dest_files=["res://.godot/imported/Murcoin_Bois.png-4d6a91fbb06d4dea7e89d5134604fd7a.s3tc.ctex"]
 
 [params]
 

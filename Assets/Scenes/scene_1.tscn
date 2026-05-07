@@ -1,10 +1,10 @@
 [gd_scene format=3 uid="uid://uswn8oq3770k"]
 
-[ext_resource type="Texture2D" uid="uid://df2ayrskdj7ka" path="res://Protagonist  (1).png" id="1_3sd7o"]
-[ext_resource type="Script" uid="uid://dl0pccuaad260" path="res://character_body_3d.gd" id="2_1abo5"]
+[ext_resource type="Texture2D" uid="uid://df2ayrskdj7ka" path="res://Assets/TexturePng/Protagonist  (1).png" id="1_3sd7o"]
+[ext_resource type="Script" uid="uid://dl0pccuaad260" path="res://Assets/Script/character_body_3d.gd" id="2_1abo5"]
 [ext_resource type="PackedScene" uid="uid://dnkyyx47axwu8" path="res://Assets/modular-environment/source/Test06.fbx" id="2_3xosi"]
-[ext_resource type="Script" uid="uid://cb4mfscsu7yub" path="res://DeathFloor.gd" id="4_kl852"]
-[ext_resource type="PackedScene" uid="uid://bn7ib04uo5a4v" path="res://scene_Table.tscn" id="4_knagl"]
+[ext_resource type="Script" uid="uid://cb4mfscsu7yub" path="res://Assets/Script/DeathFloor.gd" id="4_kl852"]
+[ext_resource type="PackedScene" uid="uid://bn7ib04uo5a4v" path="res://Assets/Scenes/scene_Table.tscn" id="4_knagl"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_05u5g"]
 atlas = ExtResource("1_3sd7o")
@@ -85,7 +85,6 @@ alpha_cut = 2
 texture_filter = 0
 sprite_frames = SubResource("SpriteFrames_05u5g")
 animation = &"Idle"
-frame_progress = 0.5671365
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="CharacterBody3D" unique_id=115650113]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 2)

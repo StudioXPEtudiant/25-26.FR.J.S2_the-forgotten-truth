@@ -3,7 +3,7 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dehcxgwpp8lnh"
-path.s3tc="res://.godot/imported/Mur2_Wallpaper.jpg-2bfa52f168797b06edf9117ad7c981c4.s3tc.ctex"
+path.s3tc="res://.godot/imported/Mur2_Wallpaper.jpg-82ff42898b5d52b695dfd3a53c8b9165.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
@@ -14,8 +14,8 @@ generator_parameters={
 
 [deps]
 
-source_file="res://Assets/Mur2_Wallpaper.jpg"
-dest_files=["res://.godot/imported/Mur2_Wallpaper.jpg-2bfa52f168797b06edf9117ad7c981c4.s3tc.ctex"]
+source_file="res://Assets/TexturePng/Mur2_Wallpaper.jpg"
+dest_files=["res://.godot/imported/Mur2_Wallpaper.jpg-82ff42898b5d52b695dfd3a53c8b9165.s3tc.ctex"]
 
 [params]
 

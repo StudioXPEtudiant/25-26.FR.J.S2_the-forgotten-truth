@@ -1,0 +1,157 @@
+[gd_scene format=3 uid="uid://cbst63d6smgj4"]
+
+[ext_resource type="Texture2D" path="res://Assets/TéléphoneForgottenTruth.png" id="1_htn3k"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_dyrao"]
+atlas = ExtResource("1_htn3k")
+region = Rect2(0, 0, 40, 80)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ejmuc"]
+atlas = ExtResource("1_htn3k")
+region = Rect2(40, 0, 40, 80)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_v6gqv"]
+atlas = ExtResource("1_htn3k")
+region = Rect2(80, 0, 40, 80)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_n4cpf"]
+atlas = ExtResource("1_htn3k")
+region = Rect2(120, 0, 40, 80)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_2oxlw"]
+atlas = ExtResource("1_htn3k")
+region = Rect2(160, 0, 40, 80)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_wmk5q"]
+atlas = ExtResource("1_htn3k")
+region = Rect2(200, 0, 40, 80)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_vp2x2"]
+atlas = ExtResource("1_htn3k")
+region = Rect2(240, 0, 40, 80)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_y5qqq"]
+atlas = ExtResource("1_htn3k")
+region = Rect2(280, 0, 40, 80)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ptxo6"]
+atlas = ExtResource("1_htn3k")
+region = Rect2(320, 0, 40, 80)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_oleq3"]
+atlas = ExtResource("1_htn3k")
+region = Rect2(360, 0, 40, 80)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ftmf3"]
+atlas = ExtResource("1_htn3k")
+region = Rect2(400, 0, 40, 80)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ucme4"]
+atlas = ExtResource("1_htn3k")
+region = Rect2(440, 0, 40, 80)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_8trah"]
+atlas = ExtResource("1_htn3k")
+region = Rect2(480, 0, 40, 80)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_b07g5"]
+atlas = ExtResource("1_htn3k")
+region = Rect2(520, 0, 40, 80)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_2plwv"]
+atlas = ExtResource("1_htn3k")
+region = Rect2(560, 0, 40, 80)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_htn3k"]
+atlas = ExtResource("1_htn3k")
+region = Rect2(600, 0, 40, 80)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ya03h"]
+atlas = ExtResource("1_htn3k")
+region = Rect2(640, 0, 40, 80)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ai6aa"]
+atlas = ExtResource("1_htn3k")
+region = Rect2(680, 0, 40, 80)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_24b6y"]
+atlas = ExtResource("1_htn3k")
+region = Rect2(720, 0, 40, 80)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_ya03h"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_dyrao")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ejmuc")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_v6gqv")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_n4cpf")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_2oxlw")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_wmk5q")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_vp2x2")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_y5qqq")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ptxo6")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_oleq3")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ftmf3")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ucme4")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_8trah")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_b07g5")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_2plwv")
+}],
+"loop": true,
+"name": &"Allumage",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_htn3k")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ya03h")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ai6aa")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_24b6y")
+}],
+"loop": true,
+"name": &"Idle",
+"speed": 5.0
+}]
+
+[node name="Node3D" type="Node3D" unique_id=1365025083]
+
+[node name="Telephone" type="AnimatedSprite3D" parent="." unique_id=1294677324]
+texture_filter = 0
+sprite_frames = SubResource("SpriteFrames_ya03h")
+animation = &"Allumage"
+frame_progress = 0.2353213
