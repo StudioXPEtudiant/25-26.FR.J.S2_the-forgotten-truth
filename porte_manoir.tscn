@@ -1,0 +1,33 @@
+[gd_scene format=3 uid="uid://drxho1at3b1d3"]
+
+[sub_resource type="BoxMesh" id="BoxMesh_2ov6o"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_yw4u7"]
+albedo_color = Color(0.7773986, 0.37754807, 0.0069670225, 1)
+
+[sub_resource type="CylinderMesh" id="CylinderMesh_qpdys"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_huilv"]
+albedo_color = Color(0.7764706, 0.3764706, 0.007843138, 1)
+
+[sub_resource type="SphereMesh" id="SphereMesh_102yq"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_1xk52"]
+albedo_color = Color(0, 0, 0, 1)
+
+[node name="PorteManoir" type="Node3D" unique_id=1796290560]
+
+[node name="PorteDessous" type="CSGMesh3D" parent="." unique_id=2059341728]
+transform = Transform3D(1, 0, 0, 0, 1.7840693, 0, 0, 0, 1, 0, 0, 0)
+mesh = SubResource("BoxMesh_2ov6o")
+material = SubResource("StandardMaterial3D_yw4u7")
+
+[node name="PorteDessus" type="CSGMesh3D" parent="." unique_id=385189254]
+transform = Transform3D(-0.007155759, 0.50148034, 0, -0.99997437, -0.0035885645, 0, 0, 0, 1, 0, 0.834779, 0)
+mesh = SubResource("CylinderMesh_qpdys")
+material = SubResource("StandardMaterial3D_huilv")
+
+[node name="PoignéePorte" type="CSGMesh3D" parent="." unique_id=1879787156]
+transform = Transform3D(0.18230975, 0, 0, 0, 0.17565946, 0, 0, 0, 0.1946286, -0.3123784, -0.10621506, 0.46164995)
+mesh = SubResource("SphereMesh_102yq")
+material = SubResource("StandardMaterial3D_1xk52")
