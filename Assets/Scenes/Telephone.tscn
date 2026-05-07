@@ -47,6 +47,82 @@ region = Rect2(520, 0, 40, 80)
 [sub_resource type="AtlasTexture" id="AtlasTexture_2plwv"]
 region = Rect2(560, 0, 40, 80)
 
+[sub_resource type="AtlasTexture" id="AtlasTexture_wfj5x"]
+atlas = ExtResource("1_htn3k")
+region = Rect2(0, 0, 40, 80)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_h7oto"]
+atlas = ExtResource("1_htn3k")
+region = Rect2(40, 0, 40, 80)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_qylds"]
+atlas = ExtResource("1_htn3k")
+region = Rect2(80, 0, 40, 80)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_djymb"]
+atlas = ExtResource("1_htn3k")
+region = Rect2(120, 0, 40, 80)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_pqbo3"]
+atlas = ExtResource("1_htn3k")
+region = Rect2(160, 0, 40, 80)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ro8mf"]
+atlas = ExtResource("1_htn3k")
+region = Rect2(200, 0, 40, 80)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_luy1s"]
+atlas = ExtResource("1_htn3k")
+region = Rect2(240, 0, 40, 80)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_pcr2v"]
+atlas = ExtResource("1_htn3k")
+region = Rect2(280, 0, 40, 80)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_5ipbs"]
+atlas = ExtResource("1_htn3k")
+region = Rect2(320, 0, 40, 80)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_pwgy4"]
+atlas = ExtResource("1_htn3k")
+region = Rect2(360, 0, 40, 80)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ern0s"]
+atlas = ExtResource("1_htn3k")
+region = Rect2(400, 0, 40, 80)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_8pjrf"]
+atlas = ExtResource("1_htn3k")
+region = Rect2(440, 0, 40, 80)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_cxd52"]
+atlas = ExtResource("1_htn3k")
+region = Rect2(480, 0, 40, 80)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_jhqq6"]
+atlas = ExtResource("1_htn3k")
+region = Rect2(520, 0, 40, 80)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_183u0"]
+atlas = ExtResource("1_htn3k")
+region = Rect2(560, 0, 40, 80)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_b6uev"]
+atlas = ExtResource("1_htn3k")
+region = Rect2(600, 0, 40, 80)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_88dlv"]
+atlas = ExtResource("1_htn3k")
+region = Rect2(640, 0, 40, 80)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_spjs3"]
+atlas = ExtResource("1_htn3k")
+region = Rect2(680, 0, 40, 80)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_pvnbg"]
+atlas = ExtResource("1_htn3k")
+region = Rect2(720, 0, 40, 80)
+
 [sub_resource type="AtlasTexture" id="AtlasTexture_htn3k"]
 region = Rect2(600, 0, 40, 80)
 
@@ -106,6 +182,63 @@ animations = [{
 }, {
 "duration": 1.0,
 "texture": SubResource("AtlasTexture_2plwv")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_wfj5x")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_h7oto")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_qylds")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_djymb")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_pqbo3")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ro8mf")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_luy1s")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_pcr2v")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_5ipbs")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_pwgy4")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ern0s")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_8pjrf")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_cxd52")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_jhqq6")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_183u0")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_b6uev")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_88dlv")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_spjs3")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_pvnbg")
 }],
 "loop": true,
 "name": &"Allumage",
@@ -135,4 +268,4 @@ animations = [{
 texture_filter = 0
 sprite_frames = SubResource("SpriteFrames_ya03h")
 animation = &"Allumage"
-frame_progress = 0.2353213
+frame_progress = 0.49097207
