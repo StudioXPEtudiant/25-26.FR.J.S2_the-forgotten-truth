@@ -1,8 +1,8 @@
 [gd_scene format=3 uid="uid://cls5jb02u8foq"]
 
-[ext_resource type="Texture2D" uid="uid://djs346crnvmc" path="res://MEULIERE-ton-naturel-1024x1024.jpg" id="1_0w5hp"]
-[ext_resource type="PackedScene" uid="uid://0ogorqjumeid" path="res://porte_manoir.tscn" id="1_4d84w"]
-[ext_resource type="Script" uid="uid://b0tdhak76aghf" path="res://sol_3_2.gd" id="3_lnjae"]
+[ext_resource type="Texture2D" uid="uid://djs346crnvmc" path="res://Assets/TexturePng/MEULIERE-ton-naturel-1024x1024.jpg" id="1_0w5hp"]
+[ext_resource type="PackedScene" uid="uid://0ogorqjumeid" path="res://Assets/Scenes/porte_manoir.tscn" id="1_4d84w"]
+[ext_resource type="Script" uid="uid://b0tdhak76aghf" path="res://Assets/Script/sol_3_2.gd" id="3_lnjae"]
 
 [sub_resource type="BoxMesh" id="BoxMesh_0w5hp"]
 
