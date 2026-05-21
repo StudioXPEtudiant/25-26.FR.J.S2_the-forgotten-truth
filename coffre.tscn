@@ -1,0 +1,10 @@
+[gd_scene format=3 uid="uid://c7aijp4pbhwtn"]
+
+[ext_resource type="Texture2D" uid="uid://bavrmsd0kmoho" path="res://Assets/TexturePng/coffre-loot-1.png" id="1_unsmk"]
+
+[node name="Node3D" type="Node3D" unique_id=712042312]
+
+[node name="Sprite3D" type="Sprite3D" parent="." unique_id=2069313098]
+billboard = 1
+texture_filter = 4
+texture = ExtResource("1_unsmk")
