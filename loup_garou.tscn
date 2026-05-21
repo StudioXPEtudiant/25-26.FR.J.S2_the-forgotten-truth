@@ -1,0 +1,13 @@
+[gd_scene format=3 uid="uid://bx6y0mk1158ua"]
+
+[ext_resource type="Texture2D" uid="uid://c1xhqv8j0t1q6" path="res://Assets/TexturePng/monstre-002.png" id="1_fy00e"]
+[ext_resource type="Script" uid="uid://b7p4yaug7v6is" path="res://sprite_3d.gd" id="2_knsls"]
+
+[node name="Node3D" type="Node3D" unique_id=1479771621]
+
+[node name="Sprite3D" type="Sprite3D" parent="." unique_id=864375085]
+transform = Transform3D(0.9999625, -0.008674176, 0, 0.008674176, 0.9999625, 0, 0, 0, 1, 0, 0.9101472, 0)
+billboard = 1
+texture_filter = 2
+texture = ExtResource("1_fy00e")
+script = ExtResource("2_knsls")
