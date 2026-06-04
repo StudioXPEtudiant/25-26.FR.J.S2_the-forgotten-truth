@@ -5,6 +5,7 @@
 [ext_resource type="PackedScene" uid="uid://dnkyyx47axwu8" path="res://Assets/modular-environment/source/Test06.fbx" id="2_3xosi"]
 [ext_resource type="Script" uid="uid://cb4mfscsu7yub" path="res://Assets/Script/DeathFloor.gd" id="4_kl852"]
 [ext_resource type="PackedScene" uid="uid://bn7ib04uo5a4v" path="res://Assets/Scenes/scene_Table.tscn" id="4_knagl"]
+[ext_resource type="PackedScene" uid="uid://cls5jb02u8foq" path="res://Assets/Scenes/scene_Manoir.tscn" id="6_rnukc"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_05u5g"]
 atlas = ExtResource("1_3sd7o")
@@ -111,3 +112,6 @@ size = Vector3(10, 0.001, 5)
 
 [node name="Table" parent="." unique_id=1491343077 instance=ExtResource("4_knagl")]
 transform = Transform3D(1.21, 0, 0, 0, 1.21, 0, 0, 0, 1.21, -2.0970864, 0.87869513, 0.370049)
+
+[node name="Manoir" parent="." unique_id=170440207 instance=ExtResource("6_rnukc")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -21.26064, 1.0100169, 10.985999)
