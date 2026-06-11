@@ -26,6 +26,9 @@ albedo_color = Color(0.3764706, 0.24313726, 0.050980393, 1)
 
 [sub_resource type="BoxMesh" id="BoxMesh_3scf2"]
 
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_tt02q"]
+albedo_color = Color(0.31764707, 0.31764707, 0.31764707, 1)
+
 [sub_resource type="BoxMesh" id="BoxMesh_g6aa2"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_h8jna"]
@@ -33,11 +36,23 @@ albedo_color = Color(0.3764706, 0.24313726, 0.050980393, 1)
 
 [sub_resource type="BoxMesh" id="BoxMesh_ljpv5"]
 
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_k4hw4"]
+albedo_color = Color(0.31764707, 0.31764707, 0.31764707, 1)
+
 [sub_resource type="BoxMesh" id="BoxMesh_3iitt"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_wkdq0"]
+albedo_color = Color(0.31764707, 0.31764707, 0.31764707, 1)
 
 [sub_resource type="BoxMesh" id="BoxMesh_ms2pb"]
 
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_bq3y0"]
+albedo_color = Color(0.3180198, 0.31801978, 0.31801975, 1)
+
 [sub_resource type="BoxMesh" id="BoxMesh_rjhvk"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_c7fxx"]
+albedo_color = Color(0.31764707, 0.31764707, 0.31764707, 1)
 
 [sub_resource type="BoxMesh" id="BoxMesh_4d84w"]
 
@@ -63,6 +78,9 @@ albedo_color = Color(0.37550318, 0.24209929, 0.05160109, 1)
 [sub_resource type="BoxMesh" id="BoxMesh_vwg2o"]
 
 [sub_resource type="BoxMesh" id="BoxMesh_tt02q"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_jbim7"]
+albedo_color = Color(0.16154096, 0.116094165, 0.07063935, 1)
 
 [node name="Manoir" type="Node3D" unique_id=170440207]
 
@@ -202,6 +220,7 @@ material = SubResource("StandardMaterial3D_tpnnt")
 [node name="mur1_2" type="CSGMesh3D" parent="Murs" unique_id=1338403581]
 transform = Transform3D(1, 0, 0, 0, 3.3211906, 0, 0, 0, 1, 0, 0.9067771, 0)
 mesh = SubResource("BoxMesh_3scf2")
+material = SubResource("StandardMaterial3D_tt02q")
 
 [node name="mur2" type="CSGMesh3D" parent="Murs" unique_id=927392175]
 transform = Transform3D(2.4404094, 0, 0, 0, 0.9670429, 0, 0, 0, 0.34934905, -44.37856, 0.019982457, 0.34946686)
@@ -211,18 +230,22 @@ material = SubResource("StandardMaterial3D_h8jna")
 [node name="mur2_2" type="CSGMesh3D" parent="Murs" unique_id=1213615082]
 transform = Transform3D(45.305996, 0, 0, 0, 3.2999997, 0, 0, 0, 0.032, -21.351894, 0.9552644, 0.5095199)
 mesh = SubResource("BoxMesh_ljpv5")
+material = SubResource("StandardMaterial3D_k4hw4")
 
 [node name="mur3_2" type="CSGMesh3D" parent="Murs" unique_id=1230251928]
 transform = Transform3D(0.976, 0, 0, 0, 3.2999995, 0, 0, 0, 1.016, -125.57333, 0.89739734, 0.0059464574)
 mesh = SubResource("BoxMesh_3iitt")
+material = SubResource("StandardMaterial3D_wkdq0")
 
 [node name="mur4_2" type="CSGMesh3D" parent="Murs" unique_id=590035140]
 transform = Transform3D(44.904, 0, 0, 0, 3.2999997, 0, 0, 0, 0.032, -105.26038, 1.0397127, 0.50870776)
 mesh = SubResource("BoxMesh_ms2pb")
+material = SubResource("StandardMaterial3D_bq3y0")
 
 [node name="mur 5_2" type="CSGMesh3D" parent="Murs" unique_id=1759480737]
 transform = Transform3D(125.44299, 0, 0, 0, 3.2999997, 0, 0, 0, 0.002, -62.742302, 0.9011223, -0.5002879)
 mesh = SubResource("BoxMesh_rjhvk")
+material = SubResource("StandardMaterial3D_c7fxx")
 
 [node name="MurHall1" type="CSGMesh3D" parent="Murs" unique_id=202877134]
 transform = Transform3D(15.130538, 0, 0, 0, 0.9196275, 0, 0, 0, 0.031759005, -74.67663, 0.04413262, 0.5089164)
@@ -270,3 +293,4 @@ mesh = SubResource("BoxMesh_vwg2o")
 [node name="CSGMesh3D" type="CSGMesh3D" parent="SolDeL\'Etage" unique_id=1008867130]
 transform = Transform3D(24.006794, 0, 0, 0, 1, 0, 0, 0, 35.779984, 1.9427791, 2.5518436, -14.783656)
 mesh = SubResource("BoxMesh_tt02q")
+material = SubResource("StandardMaterial3D_jbim7")
