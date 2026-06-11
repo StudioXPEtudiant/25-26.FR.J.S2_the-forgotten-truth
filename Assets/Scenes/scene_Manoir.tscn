@@ -258,7 +258,12 @@ mesh = SubResource("BoxMesh_4d84w")
 material = SubResource("StandardMaterial3D_cpi3o")
 
 [node name="MurHall3" type="CSGMesh3D" parent="Murs" unique_id=25376249]
-transform = Transform3D(37.582306, 0, 0, 0, 0.9614084, 0, 0, 0, 0.031759005, -63.889015, 0.020669818, 0.17727289)
+transform = Transform3D(17.254309, 0, 0, 0, 0.9614083, 0, 0, 0, 0.031759005, -52.619236, 0.020669818, 0.17727295)
+mesh = SubResource("BoxMesh_86sye")
+material = SubResource("StandardMaterial3D_u2sta")
+
+[node name="MurHall4" type="CSGMesh3D" parent="Murs" unique_id=247089615]
+transform = Transform3D(15.262906, 0, 0, 0, 0.9614083, 0, 0, 0, 0.031759005, -75.35437, 0.020669818, 0.17727306)
 mesh = SubResource("BoxMesh_86sye")
 material = SubResource("StandardMaterial3D_u2sta")
 
@@ -299,3 +304,6 @@ material = SubResource("StandardMaterial3D_jbim7")
 
 [node name="PorteManoir" parent="." unique_id=1796290560 instance=ExtResource("3_oqumk")]
 transform = Transform3D(1.3232348, 0, 0, 0, 1, 0, 0, 0, 1, 3.1524487, 1.175824, 0)
+
+[node name="PorteManoir2" parent="." unique_id=850464092 instance=ExtResource("3_oqumk")]
+transform = Transform3D(1.3232348, 0, 0, 0, 1, 0, 0, 0, 1, 3.0319772, 1.1061282, -10.467971)
