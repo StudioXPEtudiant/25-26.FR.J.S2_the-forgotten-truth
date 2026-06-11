@@ -200,7 +200,7 @@ mesh = SubResource("BoxMesh_u2sta")
 material = SubResource("StandardMaterial3D_tpnnt")
 
 [node name="mur1_2" type="CSGMesh3D" parent="Murs" unique_id=1338403581]
-transform = Transform3D(1, 0, 0, 0, 0.99999994, 0, 0, 0, 1, 0, 2.9802322e-08, 0)
+transform = Transform3D(1, 0, 0, 0, 3.3211906, 0, 0, 0, 1, 0, 0.9067771, 0)
 mesh = SubResource("BoxMesh_3scf2")
 
 [node name="mur2" type="CSGMesh3D" parent="Murs" unique_id=927392175]
@@ -209,19 +209,19 @@ mesh = SubResource("BoxMesh_g6aa2")
 material = SubResource("StandardMaterial3D_h8jna")
 
 [node name="mur2_2" type="CSGMesh3D" parent="Murs" unique_id=1213615082]
-transform = Transform3D(45.30613, 0, 0, 0, 0.965496, 0, 0, 0, 0.031759005, -21.351894, 0.014892012, 0.5095199)
+transform = Transform3D(45.305996, 0, 0, 0, 3.2999997, 0, 0, 0, 0.032, -21.351894, 0.9552644, 0.5095199)
 mesh = SubResource("BoxMesh_ljpv5")
 
 [node name="mur3_2" type="CSGMesh3D" parent="Murs" unique_id=1230251928]
-transform = Transform3D(0.9761638, 0, 0, 0, 0.9614084, 0, 0, 0, 1.0162882, -125.57333, 0.0019098818, 0.0059464574)
+transform = Transform3D(0.976, 0, 0, 0, 3.2999995, 0, 0, 0, 1.016, -125.57333, 0.89739734, 0.0059464574)
 mesh = SubResource("BoxMesh_3iitt")
 
 [node name="mur4_2" type="CSGMesh3D" parent="Murs" unique_id=590035140]
-transform = Transform3D(44.903534, 0, 0, 0, 0.9614084, 0, 0, 0, 0.031759005, -105.26038, 0.031963468, 0.5087077)
+transform = Transform3D(44.904, 0, 0, 0, 3.2999997, 0, 0, 0, 0.032, -105.26038, 1.0397127, 0.50870776)
 mesh = SubResource("BoxMesh_ms2pb")
 
 [node name="mur 5_2" type="CSGMesh3D" parent="Murs" unique_id=1759480737]
-transform = Transform3D(125.44288, 0, 0, 0, 0.8412323, 0, 0, 0, 0.0015879503, -62.742302, 0.061691314, -0.5002879)
+transform = Transform3D(125.44299, 0, 0, 0, 3.2999997, 0, 0, 0, 0.002, -62.742302, 0.9011223, -0.5002879)
 mesh = SubResource("BoxMesh_rjhvk")
 
 [node name="MurHall1" type="CSGMesh3D" parent="Murs" unique_id=202877134]
