@@ -291,6 +291,11 @@ mesh = SubResource("BoxMesh_vwg2o")
 [node name="SolDeL\'Etage" type="Node3D" parent="." unique_id=1548082734]
 
 [node name="CSGMesh3D" type="CSGMesh3D" parent="SolDeL\'Etage" unique_id=1008867130]
-transform = Transform3D(24.006794, 0, 0, 0, 1, 0, 0, 0, 35.779984, 1.9427791, 2.5518436, -14.783656)
+transform = Transform3D(24.178907, 0, 0, 0, 1, 0, 0, 0, 35.779984, 1.9427791, 2.5518436, -14.783656)
+mesh = SubResource("BoxMesh_tt02q")
+material = SubResource("StandardMaterial3D_jbim7")
+
+[node name="CSGMesh3D2" type="CSGMesh3D" parent="SolDeL\'Etage" unique_id=384964542]
+transform = Transform3D(2.2335432, 0, 0, 0, 1, 0, 0, 0, 16.331686, 15.1151495, 2.5518436, -23.467014)
 mesh = SubResource("BoxMesh_tt02q")
 material = SubResource("StandardMaterial3D_jbim7")
