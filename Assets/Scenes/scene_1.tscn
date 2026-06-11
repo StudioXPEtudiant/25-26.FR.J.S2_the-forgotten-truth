@@ -5,7 +5,8 @@
 [ext_resource type="PackedScene" uid="uid://dnkyyx47axwu8" path="res://Assets/modular-environment/source/Test06.fbx" id="2_3xosi"]
 [ext_resource type="Script" uid="uid://cb4mfscsu7yub" path="res://Assets/Script/DeathFloor.gd" id="4_kl852"]
 [ext_resource type="PackedScene" uid="uid://bn7ib04uo5a4v" path="res://Assets/Scenes/scene_Table.tscn" id="4_knagl"]
-[ext_resource type="PackedScene" uid="uid://cls5jb02u8foq" path="res://Assets/Scenes/scene_Manoir.tscn" id="6_rnukc"]
+[ext_resource type="Texture2D" uid="uid://bfxlirygk7afu" path="res://Assets/TexturePng/Fontainebleau-Parquet-Flooring-white-oak.jpg" id="5_fm23b"]
+[ext_resource type="Texture2D" uid="uid://djs346crnvmc" path="res://Assets/TexturePng/MEULIERE-ton-naturel-1024x1024.jpg" id="6_id3gh"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_05u5g"]
 atlas = ExtResource("1_3sd7o")
@@ -64,6 +65,15 @@ animations = [{
 
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_knagl"]
 
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_3a1ih"]
+albedo_texture = ExtResource("5_fm23b")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_g1idi"]
+albedo_texture = ExtResource("6_id3gh")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_gwehe"]
+albedo_texture = ExtResource("6_id3gh")
+
 [node name="Scene1" type="Node3D" unique_id=1309598555]
 
 [node name="DirectionalLight3D" type="DirectionalLight3D" parent="." unique_id=1567548787]
@@ -97,21 +107,21 @@ transform = Transform3D(1, 0, 0, 0, 0.965926, 0.258819, 0, -0.258819, 0.965926, 
 
 [node name="Sol" type="CSGBox3D" parent="." unique_id=430742804]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.374094, 0.5005, 2.42002)
+material_override = SubResource("StandardMaterial3D_3a1ih")
 use_collision = true
 size = Vector3(8.99683, 0.001, 6)
 
 [node name="Mur1" type="CSGBox3D" parent="." unique_id=996753234]
 transform = Transform3D(1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, -0.246602, 2.501, -0.159962)
+material_override = SubResource("StandardMaterial3D_g1idi")
 use_collision = true
 size = Vector3(10, 0.001, 5)
 
 [node name="Mur2" type="CSGBox3D" parent="." unique_id=936074910]
 transform = Transform3D(0.00483461, 0.999988, 0.000820257, 9.40759e-12, -0.000820267, 1, 0.999988, -0.00483458, -3.96564e-06, 4.17704, 2.66096, 2.34104)
+material_override = SubResource("StandardMaterial3D_gwehe")
 use_collision = true
 size = Vector3(10, 0.001, 5)
 
 [node name="Table" parent="." unique_id=1491343077 instance=ExtResource("4_knagl")]
 transform = Transform3D(1.21, 0, 0, 0, 1.21, 0, 0, 0, 1.21, -2.0970864, 0.87869513, 0.370049)
-
-[node name="Manoir" parent="." unique_id=170440207 instance=ExtResource("6_rnukc")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -21.26064, 1.0100169, 10.985999)
